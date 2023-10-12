@@ -47,7 +47,7 @@ const ModeSwitcher = () => {
                     {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
                 </IconButton>
             </Box>
-            <p >Texto afectado por variable global, en modo: {mode}</p>
+            <p className="parraf">Texto afectado por variable global, en modo: {mode}</p>
             <div>
                 <a >Texto afectado por variable global, en modo: {mode}</a>
                 <br />

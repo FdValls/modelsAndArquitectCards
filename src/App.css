@@ -38,7 +38,7 @@ button {
   color: var(--mui-palette-button-pepeButton);
 }
 
-p {
+.parraf {
   color: var(--mui-palette-textoParrafo) !important;
 }
 

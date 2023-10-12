@@ -1,3 +1,4 @@
+import { TypographyClassKey } from '@mui/material';
 import '@mui/material/styles';
 
 declare module '@mui/material/styles' {
@@ -16,5 +17,6 @@ declare module '@mui/material/styles' {
     titleH1?: object;
     titleH2?: object;
     fondoCard?: string;
+    fontCard?: string;
   }
 }

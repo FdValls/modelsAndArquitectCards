@@ -31,6 +31,7 @@ const theme = extendTheme({
           paper: "hsl(240, 15%, 95%)",
         },
         anchor: "orange",
+        fontCard: "white",
       },
     },
     dark: {
@@ -56,6 +57,7 @@ const theme = extendTheme({
           paper: "black",
         },
         anchor: "orange",
+        fontCard: "white",
       },
     },
   },
@@ -70,7 +72,24 @@ const theme = extendTheme({
         },
       },
     },
-  },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          color: "white",
+          // fontSize: "24px", 
+        },
+        body2:{
+          color: "yellow",
+        },
+        body1: {
+          color: "cyan",
+          // fontSize: "30px"
+        }
+        // Puedes definir clases específicas aquí
+      },
+    },
+  }
+
 });
 
 export default theme;
