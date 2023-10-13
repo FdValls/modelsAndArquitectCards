@@ -3,6 +3,15 @@
   text-align: center;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: white;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -42,16 +51,45 @@ button {
   color: var(--mui-palette-textoParrafo) !important;
 }
 
-.titleH1{
+.titleH1 {
   color: var(--mui-palette-titleH1-color) !important;
   font-size: var(--mui-palette-titleH1-fontSize) !important;
 }
 
-.titleH2{
+.titleH2 {
   color: var(--mui-palette-titleH2-color) !important;
   font-size: var(--mui-palette-titleH2-fontSize) !important;
 }
 
-.backGroundCard{
-  background: var(--mui-palette-fondoCard);
+.backgroundCardIACurrentCourses {
+  background: var(--mui-palette-backgroundCardIACurrentCourses-background) !important;
+  border-radius: var(--mui-palette-backgroundCardIACurrentCourses-borderRadius) !important;
+  width: var(--mui-palette-backgroundCardIACurrentCourses-width) !important;
+  height: var(--mui-palette-backgroundCardIACurrentCourses-height) !important;
+  flex-shrink: var(--mui-palette-backgroundCardIACurrentCourses-flexShrink) !important;
+}
+
+.backgroundCardCoursesRecommended {
+  background: var(--mui-palette-backgroundCardCoursesRecommended-background) !important;
+  border-radius: var(--mui-palette-backgroundCardCoursesRecommended-borderRadius) !important;
+  width: var(--mui-palette-backgroundCardCoursesRecommended-width) !important;
+  height: var(--mui-palette-backgroundCardCoursesRecommended-height) !important;
+  flex-shrink: var(--mui-palette-backgroundCardCoursesRecommended-flexShrink) !important;
+}
+
+.containerCard {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.titleCard {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: AvertaStd-Bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

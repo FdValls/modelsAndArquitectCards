@@ -16,7 +16,7 @@ declare module '@mui/material/styles' {
     anchor?: string;
     titleH1?: object;
     titleH2?: object;
-    fondoCard?: string;
-    fontCard?: string;
+    backgroundCardIACurrentCourses?: object;
+    backgroundCardCoursesRecommended?: object;
   }
 }
