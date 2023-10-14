@@ -19,13 +19,13 @@ const theme = extendTheme({
         },
         pepeButtonMui: blue[300],
         textoParrafo: violet[600],
-        titleH1: {
-          color: "#00ff00", // Color personalizado titleH1
-          fontSize: "clamp(1.25rem, 4vw, 2rem)", // Tamaño de fuente con `clamp`
+        colorButtonText: {
+          color: "white",
+          fontSize: "clamp(1.25rem, 4vw, 2rem)",
         },
         titleH2: {
-          color: "#ff0087", // Color personalizado titleH1
-          fontSize: "clamp(1rem, 3vw, 1.3rem)", // Tamaño de fuente con `clamp`
+          color: "#ff0087",
+          fontSize: "clamp(1rem, 3vw, 1.3rem)",
         },
 
         background: {
@@ -49,12 +49,12 @@ const theme = extendTheme({
         },
         button: {
           pepeButton: green[300],
-          bgButton: "red",
+          bgButton: "white",
         },
         pepeButtonMui: yellow[300],
         textoParrafo: green[300],
-        titleH1: {
-          color: "#ff00ff",
+        colorButtonText: {
+          color: "black",
           fontSize: "clamp(1.5rem, 4vw, 2rem)",
         },
         titleH2: {
@@ -71,7 +71,6 @@ const theme = extendTheme({
         },
         backgroundCardCoursesRecommended: {
           borderRadius: "22px",
-          // background: "red"
           background: "linear-gradient(38deg, #EF5C98 1.57%, #6D8AF8 98.56%)",
           width: "279px",
           height: "320px",
@@ -86,8 +85,9 @@ const theme = extendTheme({
         root: {
           border: "3px solid",
           width: "40%",
-          background: "var(--mui-palette-button-bgButton)",
-          color: "white",
+          background: "var(--mui-palette-button-bgButton)", 
+          color: "var(--mui-palette-colorButtonText-color)", 
+          // color: "blue",
         },
       },
     },
@@ -100,11 +100,8 @@ const theme = extendTheme({
           fontSize: "12px",
           fontStyle: "normal",
           fontWeight: "400",
-          lineHeight: "normal",
-          // fontSize: "clamp(0.75rem, 3vw, 1.3rem)",
+          lineHeight: "1.5",
         },
-
-        // Puedes definir clases específicas aquí
       },
     },
   },

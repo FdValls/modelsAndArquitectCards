@@ -1,4 +1,4 @@
-import { TypographyClassKey } from '@mui/material';
+import { TypeText } from '@mui/material';
 import '@mui/material/styles';
 
 declare module '@mui/material/styles' {
@@ -14,7 +14,7 @@ declare module '@mui/material/styles' {
     button?: PaletteOptions;
     bgButton?: string;
     anchor?: string;
-    titleH1?: object;
+    colorButtonText?: object;
     titleH2?: object;
     backgroundCardIACurrentCourses?: object;
     backgroundCardCoursesRecommended?: object;

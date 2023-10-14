@@ -79,11 +79,18 @@ button {
 
 .containerCard {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0px 20px 0px;
 }
 
+
 .titleCard {
+  text-align: center;
+}
+
+.centeredContent {
+  display: flex;
   color: var(--white, #FFF);
   text-align: center;
   font-feature-settings: 'clig' off, 'liga' off;
@@ -92,4 +99,26 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 3%;
+  justify-content: center;
+}
+
+.fixedSizeImage {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: -5%;
+  gap: 40%;
 }

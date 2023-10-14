@@ -4,8 +4,11 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import "../App.css"
 import escudoIA2 from "../assets/escudoIA2.png"
-import frame from "../assets/frame.png"
-import circle from "../assets/play_circle_filled.png"
+import desafios from "../assets/desafios.png"
+import clasesEnVivo from "../assets/clasesEnVivo.png"
+import adquirir from "../assets/adquirir.png"
+import CircularWithValueLabel from './utils/CircularProgressWithLabel';
+
 
 
 export default function RecipeReviewCard() {
@@ -14,10 +17,11 @@ export default function RecipeReviewCard() {
     <>
       <section className='containerCard'>
         <Card className='backgroundCardIACurrentCourses' >
-          <CardHeader
-            className='titleCard'
-            title="Inteligencia Artificial"
-          />
+          <div className="centeredContent">
+            Inteligencia Artificial {" "}
+            <CircularWithValueLabel />
+          </div>
+
           <div style={{ background: "black" }}>
             <img style={{ width: "100px" }} src={escudoIA2} alt="" />
           </div>
@@ -31,14 +35,12 @@ export default function RecipeReviewCard() {
               <br />
               Info: www.inove.com.ar/ia
             </Typography>
-          <img style={{margin: "16px 196px 1% 10px"}} src={frame} alt="" />
-          <img style={{margin: "16px 196px 1% 10px"}} src={circle} alt="" />
-          {/* <img style={{marginRight: "186px", marginLeft: "48px", marginBottom: "31px", marginTop: "76px"}} src={circle} alt="" /> */}
+            <div className='imageContainer'>
+              <img className='fixedSizeImage' src={desafios} alt="" />
+              <img className='fixedSizeImage' src={clasesEnVivo} alt="" />
+            </div>
           </CardContent>
         </Card >
-        <br />
-        <br />
-        <br />
         <Card className='backgroundCardCoursesRecommended' >
           <CardHeader
             className='titleCard'
@@ -57,6 +59,9 @@ export default function RecipeReviewCard() {
               <br />
               Info: www.inove.com.ar/ia
             </Typography>
+            <div className='imageContainer'>
+              <img className='fixedSizeImage' src={adquirir} alt="" />
+            </div>
           </CardContent>
         </Card >
       </section>
