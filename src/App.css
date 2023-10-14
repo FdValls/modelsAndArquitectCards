@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+a{
+  color: var(--mui-palette-text);
+}
+
 body {
   margin: 0;
   display: flex;
@@ -44,7 +48,7 @@ body {
 }
 
 button {
-  color: var(--mui-palette-button-pepeButton);
+  color: var(--mui-palette-textoParrafo);
 }
 
 .parraf {

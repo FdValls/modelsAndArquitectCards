@@ -4,7 +4,6 @@ import {
   Experimental_CssVarsProvider as CssVarsProvider,
 } from '@mui/material/styles';
 import "../App.css"
-import "../button.module.css" // si comento esta importacion, me toma el css main
 import ModeSwitcher from './utils/ModeSwitcher.tsx';
 import { Link } from "react-router-dom";
 
@@ -26,7 +25,7 @@ export default function ExampleTheme() {
           <br />
           <br />
           <Link to="/card" style={{ textDecoration: 'none' }}>
-            <Button > MUI </Button>
+            <Button > Ir a la card </Button>
           </Link>
           <br />
         </CssVarsProvider>

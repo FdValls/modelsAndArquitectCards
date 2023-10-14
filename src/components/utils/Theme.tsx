@@ -13,6 +13,9 @@ const theme = extendTheme({
         primary: {
           main: blue[300],
         },
+        text: {
+          primary: "black",
+        },
         button: {
           pepeButton: red[600],
           bgButton: "black",
@@ -24,7 +27,7 @@ const theme = extendTheme({
           fontSize: "clamp(1.25rem, 4vw, 2rem)",
         },
         titleH2: {
-          color: "#ff0087",
+          color: "red",
           fontSize: "clamp(1rem, 3vw, 1.3rem)",
         },
 
@@ -47,6 +50,9 @@ const theme = extendTheme({
         primary: {
           main: grey[300],
         },
+        text: {
+          primary: "white"
+        },
         button: {
           pepeButton: green[300],
           bgButton: "white",
@@ -58,7 +64,7 @@ const theme = extendTheme({
           fontSize: "clamp(1.5rem, 4vw, 2rem)",
         },
         titleH2: {
-          color: "#ff0087",
+          color: "yellow",
           fontSize: "clamp(1rem, 3vw, 1.3rem)",
         },
         background: {
