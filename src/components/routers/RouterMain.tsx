@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ExampleTheme from '../ExampleTheme';
 import SignInSide from '../SignIn';
-import RecipeReviewCard from "../RecipeReviewCard.tsx";
+import RecipeReviewCard from "../RecipeReviewCard.jsx";
 import { CssBaseline } from "@mui/material";
 import {
   Experimental_CssVarsProvider as CssVarsProvider,

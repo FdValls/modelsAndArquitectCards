@@ -8,10 +8,36 @@ import desafios from "../assets/desafios.png"
 import clasesEnVivo from "../assets/clasesEnVivo.png"
 import adquirir from "../assets/adquirir.png"
 import CircularWithValueLabel from './utils/CircularProgressWithLabel';
-
+import axios from "axios";
+import { useEffect, useState } from 'react';
 
 
 export default function RecipeReviewCard() {
+  const [data, setData] = useState<ApiResponse>({ data: [] });
+
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      async function getUser() {
+        try {
+          const response = await axios.get("https://reqres.in/api/users");
+          setData(response.data);
+          console.log(response.data);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      getUser();
+    }, 1000);
+
+    // Limpia el temporizador si el componente se desmonta antes de que se complete la solicitud
+    return () => clearTimeout(delay);
+  }, []);
+
+  function test() {
+    console.log(data.data[0])
+    
+  }
 
   return (
     <>
@@ -64,6 +90,8 @@ export default function RecipeReviewCard() {
             </div>
           </CardContent>
         </Card >
+        <button onClick={test}>Haz clic para probar</button>
+
       </section>
     </>
   );
